@@ -36,6 +36,8 @@ export interface SharedDynamicNode {
   draggable?: WritableSignal<boolean>;
   parentId?: WritableSignal<string | null>;
   preview?: WritableSignal<NodePreview>;
+  group?: WritableSignal<boolean>;
+  controlledByResizer?: WritableSignal<boolean>;
 }
 
 export interface DefaultNode extends SharedNode {
