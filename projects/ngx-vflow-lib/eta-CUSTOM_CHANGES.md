@@ -6,10 +6,6 @@ This document tracks modifications made to the ngx-vflow library.
 
 ### SharedDynamicNode Interface
 
-- **`group` field**
-  - Type: `WritableSignal<boolean>` (optional)
-  - Location: `projects/ngx-vflow-lib/src/lib/vflow/interfaces/node.interface.ts`
-  - Dynamic nodes can now have a `group` property, initialized from node data if present (otherwise defaults to `false`).
 - **`controlledByResizer` field**
   - Type: `WritableSignal<boolean>` (optional, default: `true`)
   - Location: `projects/ngx-vflow-lib/src/lib/vflow/interfaces/node.interface.ts`
@@ -17,9 +13,9 @@ This document tracks modifications made to the ngx-vflow library.
 
 ### NodeModel
 
-- **Initialization of `group` and `controlledByResizer`**
-  - The `NodeModel` constructor now checks for `group` and `controlledByResizer` in the node data.
-  - If present, these values are used; otherwise, `group` defaults to `false` and `controlledByResizer` defaults to `true`.
+- **Initialization of `controlledByResizer`**
+  - The `NodeModel` constructor now checks for `controlledByResizer` in the node data.
+  - If present, these values are used; otherwise, `controlledByResizer` defaults to `true`.
   - Location: `projects/ngx-vflow-lib/src/lib/vflow/models/node.model.ts`
 
 ## Files Modified
